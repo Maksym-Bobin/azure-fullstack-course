@@ -20,7 +20,7 @@ export default {
   name: 'App',
   data() {
     return {
-      apiMessage: 'Натисніть кнопку для перевірки ...',
+      apiMessage: 'Натисніть кнопку для перевірки ... !',
       isLoading: false
     }
   },
