@@ -5,6 +5,10 @@ require('dotenv').config(); // Завантажує змінні з .env
 const app = express();
 const port = process.env.PORT || 3000; // Порт з налаштувань або 3000 за замовчуванням
 
+// Читаємо "секрет" зі змінних середовища
+// Якщо його немає, використовуємо текст "Секрет не налаштовано!"
+const mySecret = process.env.MY_APP_SECRET || "Секрет не налаштовано (Default)";
+
 // Визначаємо список дозволених доменів
 // У реальному житті цю адресу теж краще виносити в .env, але поки пропишемо тут
 const allowedOrigins = [
@@ -32,6 +36,7 @@ app.use(express.json());
 app.get('/api/test', (req, res) => {
   res.json({
     message: 'Привіт! Це оновлення прилетіло через GitHub Actions!',
+    secretCode: `Мій секрет: ${mySecret}`, // Виводимо для перевірки
     timestamp: new Date().toISOString()
   });
 });
