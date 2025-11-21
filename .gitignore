@@ -1,0 +1,24 @@
+# Залежності
+node_modules/
+
+# Системні файли
+.DS_Store
+Thumbs.db
+
+# Логи
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Середовища (Секрети!)
+.env
+.env.local
+.env.*.local
+
+# Папки білду
+dist/
+build/
+
+# Папки редакторів
+.vscode/
+.idea/
