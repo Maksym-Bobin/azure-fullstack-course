@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" width="100">
-    <h1>Vue 3 + Node.js в Azure</h1>
+    <h1>Мій автоматизований проєкт Azure 🚀</h1>
     
     <div class="card">
       <p>Статус з'єднання з API:</p>
@@ -20,7 +20,7 @@ export default {
   name: 'App',
   data() {
     return {
-      apiMessage: 'Натисніть кнопку для перевірки ... !',
+      apiMessage: 'Натисніть кнопку для перевірки ...',
       isLoading: false
     }
   },

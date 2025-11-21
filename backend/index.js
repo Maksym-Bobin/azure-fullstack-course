@@ -31,7 +31,7 @@ app.use(express.json());
 // Наш тестовий API роут
 app.get('/api/test', (req, res) => {
   res.json({
-    message: 'Привіт! Backend працює успішно.',
+    message: 'Привіт! Це оновлення прилетіло через GitHub Actions!',
     timestamp: new Date().toISOString()
   });
 });
